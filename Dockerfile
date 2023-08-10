@@ -1,6 +1,6 @@
 FROM golang:1.21.0-alpine
 
-COPY ./src /app
+COPY . /app
 WORKDIR /app
 
 RUN go mod download && go mod verify
